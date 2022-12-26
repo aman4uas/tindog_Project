@@ -1,0 +1,206 @@
+body {
+    font-family: 'Montserrat-Regular 400';
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    size: 3.5rem;
+}
+
+h2{
+    font-family: 'Montserrat';
+}
+#cta{
+    font-family: 'Montserrat';
+    color: white;
+}
+#cta-text{
+    padding-top: 50px;
+    padding-bottom: auto;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+p{
+    color: #8f8f8f;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+#title {
+    background-color: #ff4c68;
+    color: white;
+}
+
+/* Navigation bar */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Light';
+}
+
+/* Download-button */
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* title-image */
+.title-image {
+    width: 60%;
+    transform: rotate(25deg);
+    right: 30%;
+}
+
+/* features-section */
+#features {
+    padding: 7% 15%;
+    background-color: white; /*this */
+  
+}
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+.icon:hover{
+    color: #ff4c68;
+}
+
+/* Testimonials */
+
+#testimonials{
+    text-align: center;
+    background-color: #ef8172;
+    color:white;
+}
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.press-logo{
+    width: 15%; 
+    margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+#pricing{
+    padding: 100px;
+    text-align: center;
+}
+#cta{
+    background-color: #ff4c68;
+    text-align: center;
+}
+.pricing-column{
+    padding:3% 2%;
+}
+
+
+@media (max-width: 1028px){
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        transform: rotate(0);
+    }
+}
+
+.lower-button{
+    margin-top: 50px;
+}
+
+/* footer */
+#footer{
+    text-align: center;
+    margin: 50px auto;
+}
+.socials{
+    margin: 12px 4px;
+}
+
+
+
+
+
+/*          Combining Selectors
+
+    1. Multiple Selectors :
+
+        selector1, selector2 {
+
+        }
+
+        Example:
+        h1, h2, h4, p {
+            font-family:'Montserrat';
+        }
+    
+    2. Hierarchical Selectors :
+        
+        selector1 selector2 {
+
+        }
+        --> selector1 is parent and selector2 is element/child on which effect is applied
+        --> Here child element has to be inside any parent
+
+        Example:
+        div .title {
+            color:red;
+        }
+        --> This means that the elements of class title which is inside parent div will have the CSS effect
+
+    3. Combination Selectors :
+        selector1selector2 {
+
+        }
+        --> Here the target element should belong to both selector and not inside selector1
+
+        Example:
+        <div>
+            <h1 id="title">
+                Hello World
+            </h1>
+        </div>
+        h1#title {
+            color: red;
+        }
+        --> This is correct
+
+        div#title {
+            color: red;
+        }
+        --> This is wrong
+        
+
+    
