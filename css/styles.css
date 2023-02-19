@@ -64,6 +64,10 @@ p{
 .title-image {
     width: 60%;
     transform: rotate(25deg);
+    position: relative;
+    left: 10px;
+    top: 50px;
+    z-index: 1;
     right: 30%;
 }
 
@@ -71,6 +75,8 @@ p{
 #features {
     padding: 7% 15%;
     background-color: white; /*this */
+    position: relative;
+    z-index: 2;
   
 }
 .feature-box{
@@ -133,6 +139,7 @@ p{
     }
     .title-image{
         transform: rotate(0);
+        position: static;
     }
 }
 
